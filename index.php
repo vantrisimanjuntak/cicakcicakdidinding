@@ -1,1 +1,1 @@
-<?= "Cicak Cicak di Dinding, Diam Diam Sayang Diaaa"; ?>
+<?= "Cicak Cicak di Dinding, Diam Diam Sayang Dia"; ?>
