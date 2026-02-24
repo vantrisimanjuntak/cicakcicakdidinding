@@ -17,5 +17,5 @@ jobs:
           key: ${{secrets.CICAK_SSH_KEY}}
           port: 2233
           script: |
-            ls -la
+            pwd && ls -la
             cp ../index.php /home/cicak/public_html/
