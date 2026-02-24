@@ -12,7 +12,7 @@ jobs:
         uses: appleboy/ssh-action@v1
         with:
           host: 103.65.236.98
-          username: root
+          username: cicak
           key: ${{secrets.CICAK_SSH_KEY}}
           port: 2233
           script: whoami
