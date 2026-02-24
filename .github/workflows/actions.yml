@@ -10,12 +10,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Execute remote SSH commands using SSH key
-        uses: appleboy/ssh-action@v1
+        uses: appleboy/ssh-action@v0.1.7
         with:
           host: 103.65.236.98
           username: cicak
           key: ${{secrets.CICAK_SSH_KEY}}
           port: 2233
-          script: |
-            ls -la
-            cp ../index.php /home/cicak/public_html/
+          source: "index.php"
+          target: "/home/cicak/public_html/"
+          strip_components: 0
