@@ -8,6 +8,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Execute remote SSH commands using SSH key
         uses: appleboy/ssh-action@v1
         with:
@@ -15,4 +16,4 @@ jobs:
           username: cicak
           key: ${{secrets.CICAK_SSH_KEY}}
           port: 2233
-          script: whoami
+          script: cp index.php /home/cicak/public_html/
