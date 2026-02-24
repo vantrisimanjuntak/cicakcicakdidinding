@@ -16,3 +16,4 @@ jobs:
           key: ${{secrets.CICAK_SSH_KEY}}
           port: 2233
           script: whoami
+          debug: true
