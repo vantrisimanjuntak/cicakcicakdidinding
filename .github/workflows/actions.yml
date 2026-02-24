@@ -8,9 +8,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup SSH and Run Commands
-        run: |
-          echo ${{secrets.CICAK_SSH_KEY}} >> ~/.ssh/ssh_key
-          cat ~/.ssh/ssh_key
-          ssh -o StrictHostKeyChecking=no -p 2288 -i ~/.ssh/ssh_key cicak@103.65.236.98 \
-          echo "Hello World"
+      - name: Execute remote SSH commands using SSH key
+        uses: appleboy/ssh-action@v1
+        with:
+          host: 103.65.236.98
+          username: cicak
+          key: ${{secrets.CICAK_SSH_KEY}}
+          port: 2288
+          script: whoami
