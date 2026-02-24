@@ -18,4 +18,4 @@ jobs:
           port: 2233
           script: |
             pwd && ls -la
-            cp ../index.php /home/cicak/public_html/
+            cp /home/runner/work/cicakcicakdidinding/cicakcicakdidinding/index.php /home/cicak/public_html/
