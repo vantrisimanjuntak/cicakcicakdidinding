@@ -14,5 +14,5 @@ jobs:
           host: 103.65.236.98
           username: cicak
           key: ${{secrets.CICAK_SSH_KEY}}
-          port: 2288
+          port: 2233
           script: whoami
