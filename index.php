@@ -1,1 +1,1 @@
-<?= "Cicak Cicak di Dinding, Nyanyi lagi"; ?>
+<?= "Lorem Ipsum Dolor Sit Amet"; ?>
